@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+button {
+    display: flex;
+    color: white;
+    background-color: #3b82f6;
+    border-color: white;
+    margin: 36px;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: center;
+    border: white solid 1px;
+    border-radius: 8px;    
+    justify-content: left;
+}
+
 body{
     margin: 0;
     background-color: whitesmoke;
@@ -14,8 +28,7 @@ body{
     height : 0 ;
  }
 
-.header,
-footer {
+.header, .footer {
     background-color: #1f2937;
     display: flex;
     flex-direction: row;
@@ -66,14 +79,6 @@ footer {
     
 }
 
-.hero-main > button {
-    color: blue;
-    align-self: flex-start;
-    padding: 8px;
-    margin-top: 12px;
-    
-}
-
 .hero-img {
     margin: 64px;
 }
@@ -82,21 +87,87 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 300px;
+    margin-bottom: 25px;
 }
 
 .hero > ul {
     display: flex;
 }
 
-.some-div {
+th {
     height: 125px;
     width: 125px;
     border: #3882f6 3px solid;
     border-radius: 15px;
     background-color: whitesmoke;
-    margin: 32px;
+    padding: 32px;    
+}
+
+td {
+    text-align: center;
+    font-size: 12px;    
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-basis: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: justify;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote-section > .signature {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-style: normal ;
+    font-style: bold ;
+}
+
+.cta {
+    background-color: #3b82f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;;
+    border-radius: 8px;
+}
+
+.cta2 {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.cta > button {
+
+}
+
+.cta > p {
+    color: white;
+    font-size: 12px;
+    text-align: start;
 }
 
 li {
     list-style-type: none;
 }
+
+
+
+.footer {
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}    
